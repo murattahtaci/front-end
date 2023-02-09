@@ -48,7 +48,7 @@ function LoginForm() {
           <iframe
             src={ifrmSrc}
             title="Form"
-            style={{ height: "2000px", width: "100%" }}></iframe>
+            style={{ height: "100vh", width: "100%" }}></iframe>
         </div>
       )}
     </div>
