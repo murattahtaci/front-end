@@ -24,15 +24,15 @@ function LoginForm() {
           <Title>Afet İletişim</Title>
           <form className={styles.loginForm} onSubmit={handleSubmit(onSubmit)}>
             <div className={styles.input}>
-              <label htmlFor="name">Görevli Kullanıcı Adı</label>
+              <label htmlFor="name">Görevli Adı</label>
               <input required {...register("name")} />
             </div>
             <div className={styles.input}>
-              <label htmlFor="surName">Soyad</label>
+              <label htmlFor="surName">Görevli Soyadı</label>
               <input required {...register("surName", { required: true })} />
             </div>
             <div className={styles.input}>
-              <label htmlFor="id">TC</label>
+              <label htmlFor="id">Görevli TC</label>
               <input required {...register("id")} />
             </div>
             <button>Giriş</button>
