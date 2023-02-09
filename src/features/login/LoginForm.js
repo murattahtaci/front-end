@@ -1,8 +1,8 @@
 import { useForm } from "react-hook-form";
+import { useState } from "react";
 import Title from "../../components/title/Title";
 
 import styles from "./loginForm.module.css";
-import { useState } from "react";
 
 function LoginForm() {
   const { register, handleSubmit } = useForm();
@@ -23,7 +23,7 @@ function LoginForm() {
   };
 
   return (
-    <div className={styles.container}>
+    <>
       {isIfrmVisible === false ? (
         <>
           <Title>Afet İletişim</Title>
@@ -38,20 +38,19 @@ function LoginForm() {
             </div>
             <div className={styles.input}>
               <label htmlFor="id">Görevli TC</label>
-              <input required {...register("id")} />
+              <input minLength={11} required {...register("id")} />
             </div>
             <button>Giriş</button>
           </form>
         </>
       ) : (
-        <div className="iframe">
-          <iframe
-            src={ifrmSrc}
-            title="Form"
-            style={{ height: "100vh", width: "100%" }}></iframe>
-        </div>
+        <iframe
+          className={styles.iframe}
+          src={ifrmSrc}
+          title="Form"
+          style={{ height: "100vh", width: "100%" }}></iframe>
       )}
-    </div>
+    </>
   );
 }
 

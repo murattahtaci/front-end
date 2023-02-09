@@ -1,21 +1,20 @@
-.container {
-  width: 1140px;
-  max-width: 100%;
-  margin: auto;
-}
-
 .loginForm {
-  padding: 40px;
+  padding: 30px 90px;
   display: flex;
   flex-direction: column;
   border: 1px solid black;
-  margin: 0 auto;
   height: 500px;
 }
 
 .loginForm .input {
   display: flex;
   flex-direction: column;
+}
+
+.iframe {
+  width: 100%;
+  border: none;
+  outline: none;
 }
 
 input {
@@ -44,8 +43,10 @@ textarea:focus {
 }
 
 label {
-  margin-top: 10px;
+  margin: 5px;
   color: #000;
+  font-size: 18px;
+  font-weight: bold;
 }
 
 button,
@@ -58,8 +59,4 @@ input[type="submit"] {
   max-width: 400px;
   margin-top: 20px;
   cursor: pointer;
-}
-
-.iframe {
-  width: 100%;
 }
