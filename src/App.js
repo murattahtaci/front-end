@@ -2,7 +2,7 @@ import LoginForm from "./features/login/LoginForm";
 
 function App() {
   return (
-    <div className="App">
+    <div style={{ width: "100%" }} className="App">
       <LoginForm />
     </div>
   );

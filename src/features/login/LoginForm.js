@@ -10,10 +10,15 @@ function LoginForm() {
   const [ifrmSrc, setIfrmSrc] = useState("");
   const [isIfrmVisible, setIfrmVisible] = useState(false);
 
-  const onSubmit = ({ name, surName, id }) => {
+  const onSubmit = (data) => {
+    let userID = {
+      name: data.name,
+      surName: data.surName,
+      tc: data.id,
+    };
     setIfrmVisible(true);
     setIfrmSrc(
-      `https://form.jotform.com/230393262424956?name=${name}&surname=${surName}&tc=${id}`
+      `https://form.jotform.com/230393262424956?userID=${userID.name}-${userID.surName}-${userID.id}`
     );
   };
 
@@ -40,7 +45,10 @@ function LoginForm() {
         </>
       ) : (
         <div className="iframe">
-          <iframe src={ifrmSrc} title="Form" height="720" width="1100"></iframe>
+          <iframe
+            src={ifrmSrc}
+            title="Form"
+            style={{ height: "2000px", width: "100%" }}></iframe>
         </div>
       )}
     </div>
