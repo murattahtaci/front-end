@@ -1,0 +1,66 @@
+.container {
+  width: 1140px;
+  max-width: 100%;
+  margin: auto;
+}
+
+.loginForm {
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid black;
+  margin: 0 auto;
+  height: 500px;
+}
+
+.loginForm .input {
+  display: flex;
+  flex-direction: column;
+}
+
+input {
+  padding: 9px;
+  max-width: 400px;
+  border: solid 1px #000;
+  outline: 2;
+  width: 100%;
+  background: #ffffff;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+textarea {
+  width: 100%;
+  height: 150px;
+  line-height: 150%;
+}
+
+input:hover,
+textarea:hover,
+input:focus,
+textarea:focus {
+  border-color: #c9c9c9;
+}
+
+label {
+  margin-top: 10px;
+  color: #000;
+}
+
+button,
+input[type="submit"] {
+  padding: 9px 15px;
+  background: #16b66d;
+  border: 0;
+  font-size: 14px;
+  color: #fff;
+  max-width: 400px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+.iframe {
+  width: 100%;
+  height: 100%;
+}
