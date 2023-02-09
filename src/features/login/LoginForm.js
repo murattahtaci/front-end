@@ -24,7 +24,7 @@ function LoginForm() {
           <Title>Afet İletişim</Title>
           <form className={styles.loginForm} onSubmit={handleSubmit(onSubmit)}>
             <div className={styles.input}>
-              <label htmlFor="name">Ad</label>
+              <label htmlFor="name">Görevli Kullanıcı Adı</label>
               <input required {...register("name")} />
             </div>
             <div className={styles.input}>
